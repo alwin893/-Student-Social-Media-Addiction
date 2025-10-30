@@ -10,6 +10,35 @@ The goal is to identify patterns in social media behavior among students and und
 
 ---
 
+📦 Student_Social_Media_Analysis/
+│
+├── 📂 Documentation/
+│   ├── Project_Report.pdf
+│   ├── ER_Diagram.png
+│   ├── Data_Dictionary.xlsx
+│
+├── 📂 SQL_Files/
+│   ├── create_tables.sql
+│   ├── insert_sample_data.sql
+│   ├── analysis_queries.sql
+│
+├── 📂 PowerBI_Dashboard/
+│   ├── Student_Social_Media.pbix
+│   ├── Dashboard_Theme.md
+│   ├── PowerBI_Screenshots/
+│       ├── overview_page.png
+│       ├── performance_insights.png
+│       ├── health_analysis.png
+│
+├── 📂 Assets/
+│   ├── Logo.png
+│   ├── Preview_Banner.png
+│
+├── README.md
+└── LICENSE
+
+---
+
 🗃 Dataset Overview
 
 Table: SSMA
@@ -194,30 +223,45 @@ This ERD serves as the foundation for both SQL queries and Power BI visualizatio
  
 --- 
 
-🪄 How to Use This Project
+⚙️ Setup Instructions
 
-Clone the repository:
+Clone the repository
 
-git clone https://github.com/yourusername/student-social-media-addiction.git
+git clone https://github.com/yourusername/Student_Social_Media_Analysis.git
 
 
-Open student_social_media_data.xlsx in Power BI.
+Open the SQL scripts
 
-Load and clean data if necessary.
+Run create_tables.sql to build the database schema.
 
-Open student_social_media_dashboard.pbix in Power BI Desktop.
+Run insert_sample_data.sql to populate data.
 
-Explore dashboard pages and interact with filters/slicers.
+Use analysis_queries.sql for insights.
+
+
+Open Power BI
+
+Load the .pbix file located in PowerBI_Dashboard/.
+
+Connect it to your SQL database if necessary.
+
+Explore visuals and filters interactively.
 
 ---
 
 🧑‍💻 Author:
 
-👤 Created by: Alwin Raj
+👤 Created by: Alwin Infentraj
 
 📧 Email: alwinraj952@gmail.com
 
 💼 Freelancer in: | UI/UX Design | Data Analytics
+
+---
+
+🏁 Conclusion
+
+This project demonstrates how data-driven insights can help understand digital behavior patterns among students and their effects on performance and well-being.
 
 ---
 
@@ -233,15 +277,3 @@ If you found this project useful:
 
 
 ---
-
-###  Next Steps:
-1. Create this folder in your local project:  
-   `student-social-media-addiction/powerbi/screenshots/`
-2. Save your four uploaded `.png` images inside it.
-3. Copy this README.md to your main project folder.
-4. Push it to GitHub — and your repository will look **professional and recruiter-ready** 🎯
-
----
-
-Would you like me to also generate your **SQL query file (`student_social_media_queries.sql`)** that matches this project’s dataset (with ~10 queries from basic to insights)?  
-I can make it ready to upload along with this README.
