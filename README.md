@@ -1,33 +1,3 @@
-🗂 Repository Structure:
-
-📁 Student_Social_Media_Addiction_SQL_Project
-│
-├── 📄 README.md
-│
-├── 📁 Database
-│   ├── SSMA_Database_Structure.sql          # Table structure, columns, data types
-│   ├── SSMA_Insert_SampleData.sql           # Sample dataset (INSERT statements)
-│
-├── 📁 Queries
-│   ├── 01_Basic_Queries.sql                 # Simple SELECT, WHERE, etc.
-│   ├── 02_Intermediate_Queries.sql          # GROUP BY, AVG, COUNT, etc.
-│   ├── 03_Advanced_Queries.sql              # CASE, WINDOW functions, RANK, etc.
-│
-├── 📁 Analysis_Outputs
-│   ├── Platform_Popularity.csv              # Results from platform usage query
-│   ├── Addiction_Level_Stats.csv            # Categorization output
-│   ├── Gender_Based_Insights.csv            # Gender analysis results
-│
-├── 📁 PowerBI_Dashboard
-│   ├── SSMA_Insights.pbix                   # Power BI dashboard (optional)
-│   ├── Dashboard_Screenshots/               # Add your Power BI visuals here
-│
-└── 📁 Documentation
-    ├── Project_Report.pdf                   # Final project summary
-    ├── ER_Diagram.png                       # Entity Relationship Diagram
-    ├── Data_Dictionary.xlsx                 # Column names and descriptions
-
-
 
 # -Student-Social-Media-Addiction
 
@@ -40,49 +10,24 @@ The goal is to identify patterns in social media behavior among students and und
 
 ---
 
-## 🧩 Tools & Technologies: 
-
-- **SQL** (MySQL / SQL Server / SQLite)
-- **Microsoft Power BI**
-- **Excel / CSV** (Data source)
-- **GitHub** (Project hosting)
-
----
-
-## 🗂️ Dataset Description
-| Column Name | Description |
-|--------------|-------------|
-| Student_ID | Unique ID |
-| Age_Group | 15-18 / 19-24|
-| Gender | Male / Female |
-| Daily_Usage_Hours | Hours spent daily on social media |
-| Mostly_Used_Platform | Instagram / YouTube / WhatsApp / Facebook |
-| Sleep_Hours | Avg daily sleep |
-| Academic_Score | Exam score out of 10 |
-| Mental_Stress_Level | Low / Medium / High |
-| Affects_Academic_Performance | Yes / No |
-
----
-
 🗃 Dataset Overview
 
 Table: SSMA
 Columns:
 
-Column                  	          Description
-
-Student_ID                       	Unique identifier for each student
-Age	Student’s                     age
-Gender                  	         Gender of student
-Country	                          Country of student
-Avg_Daily_Usage_Hours   	         Daily time spent on social media
-Most_Used_Platform	               Commonly used platform
-Affects_Academic_Performance     	Academic impact score
-Addicted_Score                   	Social media addiction level score
+Column	                            Description
+Student_ID	                        Unique identifier for each student
+Age	Student’s                       age
+Gender	                            Gender of student
+Country	                            Country of student
+Avg_Daily_Usage_Hours	            Daily time spent on social media
+Most_Used_Platform	                Commonly used platform
+Affects_Academic_Performance	    Academic impact score
+Addicted_Score	                    Social media addiction level score
 Sleep_Hours_Per_Night	            Average sleep duration
 Mental_Health_Score              	Mental health rating
 
-🧩 SQL Analysis Breakdown
+🧩 SQL Analysis Breakdown:
 🔹 Basic Analysis
 
 View all data:
@@ -186,13 +131,13 @@ Element	      Color 	         HEX
 
 Primary	   Deep Blue	       #3B82F6
 
-Accent	    Bright Cyan      #22D3EE
+Accent	    Bright Cyan        #22D3EE
 
 Alert 	    Coral Red	       #F87171
 
-Success	   Emerald Green 	  #10B981
+Success	   Emerald Green 	   #10B981
 
-Background	 Soft Gray 	     #F5F7FA
+Background	 Soft Gray 	       #F5F7FA
 
 
 🧾 Key Insights Summary:
