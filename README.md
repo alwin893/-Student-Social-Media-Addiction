@@ -1,5 +1,5 @@
 
-# -Student-Social-Media-Addiction
+# Student-Social-Media-Addiction
 
 # 🎓 Student Social Media Addiction Analysis (SQL + Power BI)
 
