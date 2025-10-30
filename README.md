@@ -31,6 +31,7 @@ Columns:
 ---
 
 🧩 SQL Analysis Breakdown:
+
 🔹 Basic Analysis
 
 View all data:
@@ -164,6 +165,7 @@ Promoting balanced digital routines improves focus and well-being.
 
  Balance between study and social media improves performance.
  
+--- 
 
 🪄 How to Use This Project
 
