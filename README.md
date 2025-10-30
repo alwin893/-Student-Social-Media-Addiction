@@ -1,3 +1,34 @@
+🗂 Repository Structure:
+
+📁 Student_Social_Media_Addiction_SQL_Project
+│
+├── 📄 README.md
+│
+├── 📁 Database
+│   ├── SSMA_Database_Structure.sql          # Table structure, columns, data types
+│   ├── SSMA_Insert_SampleData.sql           # Sample dataset (INSERT statements)
+│
+├── 📁 Queries
+│   ├── 01_Basic_Queries.sql                 # Simple SELECT, WHERE, etc.
+│   ├── 02_Intermediate_Queries.sql          # GROUP BY, AVG, COUNT, etc.
+│   ├── 03_Advanced_Queries.sql              # CASE, WINDOW functions, RANK, etc.
+│
+├── 📁 Analysis_Outputs
+│   ├── Platform_Popularity.csv              # Results from platform usage query
+│   ├── Addiction_Level_Stats.csv            # Categorization output
+│   ├── Gender_Based_Insights.csv            # Gender analysis results
+│
+├── 📁 PowerBI_Dashboard
+│   ├── SSMA_Insights.pbix                   # Power BI dashboard (optional)
+│   ├── Dashboard_Screenshots/               # Add your Power BI visuals here
+│
+└── 📁 Documentation
+    ├── Project_Report.pdf                   # Final project summary
+    ├── ER_Diagram.png                       # Entity Relationship Diagram
+    ├── Data_Dictionary.xlsx                 # Column names and descriptions
+
+
+
 # -Student-Social-Media-Addiction
 
 # 🎓 Student Social Media Addiction Analysis (SQL + Power BI)
@@ -9,7 +40,8 @@ The goal is to identify patterns in social media behavior among students and und
 
 ---
 
-## 🧩 Tools & Technologies
+## 🧩 Tools & Technologies: 
+
 - **SQL** (MySQL / SQL Server / SQLite)
 - **Microsoft Power BI**
 - **Excel / CSV** (Data source)
@@ -21,35 +53,206 @@ The goal is to identify patterns in social media behavior among students and und
 | Column Name | Description |
 |--------------|-------------|
 | Student_ID | Unique ID |
-| Name | Student name |
-| Age_Group | 15-18 / 19-22 |
+| Age_Group | 15-18 / 19-24|
 | Gender | Male / Female |
 | Daily_Usage_Hours | Hours spent daily on social media |
 | Mostly_Used_Platform | Instagram / YouTube / WhatsApp / Facebook |
-| Usage_Purpose | Entertainment / Study / Communication |
 | Sleep_Hours | Avg daily sleep |
-| Academic_Score | Exam score out of 100 |
+| Academic_Score | Exam score out of 10 |
 | Mental_Stress_Level | Low / Medium / High |
 | Affects_Academic_Performance | Yes / No |
 
 ---
 
-##🧠 SQL Tasks Performed
+🗃 Dataset Overview
 
- 1️⃣ Basic Queries
-sql
-SELECT * FROM Student_Social_Media;
-SELECT Gender, AVG(Daily_Usage_Hours) AS Avg_Usage FROM Student_Social_Media GROUP BY Gender;
+Table: SSMA
+Columns:
 
-2️⃣ Analytical Queries
-SELECT Mostly_Used_Platform, COUNT(*) AS User_Count FROM Student_Social_Media GROUP BY Mostly_Used_Platform;
+Column                  	          Description
 
-SELECT Student_ID, Daily_Usage_Hours, Academic_Score
-FROM Student_Social_Media
-WHERE Daily_Usage_Hours > 5 AND Academic_Score < 60;
+Student_ID                       	Unique identifier for each student
+Age	Student’s                     age
+Gender                  	         Gender of student
+Country	                          Country of student
+Avg_Daily_Usage_Hours   	         Daily time spent on social media
+Most_Used_Platform	               Commonly used platform
+Affects_Academic_Performance     	Academic impact score
+Addicted_Score                   	Social media addiction level score
+Sleep_Hours_Per_Night	            Average sleep duration
+Mental_Health_Score              	Mental health rating
 
-3️⃣ Insights Queries
-SELECT Mental_Stress_Level, AVG(Daily_Usage_Hours) AS Avg_Usage
-FROM Student_Social_Media
-GROUP BY Mental_Stress_Level;
+🧩 SQL Analysis Breakdown
+🔹 Basic Analysis
 
+View all data:
+
+SELECT * FROM SSMA;
+
+
+Students using social media under age 20
+
+SELECT Student_ID, Age, Country FROM SSMA WHERE Age < 20;
+
+🔹 Intermediate Analysis
+
+Average social media usage hours
+
+SELECT ROUND(AVG(Avg_Daily_Usage_Hours),2) AS Avg_Usage FROM SSMA;
+
+
+Platform popularity
+
+SELECT Most_Used_Platform, COUNT(*) AS User_Count FROM SSMA GROUP BY Most_Used_Platform;
+
+🔹 Advanced Insights
+
+Categorizing students by addiction level
+
+SELECT Student_ID,
+       CASE
+         WHEN Avg_Daily_Usage_Hours > 6 THEN 'High'
+         WHEN Avg_Daily_Usage_Hours BETWEEN 3 AND 6 THEN 'Moderate'
+         ELSE 'Low'
+       END AS Addiction_Level
+FROM SSMA;
+
+
+Rank students by addiction level
+
+SELECT Student_ID, Avg_Daily_Usage_Hours,
+       RANK() OVER (ORDER BY Avg_Daily_Usage_Hours DESC) AS Addiction_Rank
+FROM SSMA;
+
+---
+
+📊 Power BI Dashboard Design:
+
+🏠 Page 1 – Homepage Overview
+
+Highlights
+
+KPIs: Total Students, Avg Usage Hours, Avg Sleep, Avg Addiction Score
+
+Social Media Icon Panel (Instagram, TikTok, Twitter, LinkedIn)
+
+Navigation Buttons → Usage Overview, Addiction Impact, Smart Solutions
+
+Insight: “Most students spend 4–6 hours daily on social media, impacting sleep and academic focus.”
+
+📈 Page 2 – Usage Overview
+
+Visuals
+
+Pie Chart: Platform popularity (Instagram & YouTube lead)
+
+Bar Chart: Gender-wise distribution
+
+Horizontal Bar: Avg Daily Usage by Age Group
+
+Matrix Table: Platform vs Sleep Hours vs Addiction Score
+
+💭 Page 3 – Addiction Impact
+
+Visuals
+
+Scatter Plot: Usage Hours vs Addiction Score
+
+Line Chart: Daily Usage vs Sleep Hours
+
+Bar Chart: Stress Level Count
+
+Matrix: Platform vs Academic Score vs Sleep Hours
+
+Insight:
+
+Students using social media more than 5 hours/day tend to have lower sleep (avg 3.8 hrs) and higher stress.
+
+🧠 Page 4 – Insights & Solutions
+
+Findings
+
+Students with >5 hrs/day usage have lower academic scores.
+
+Instagram & YouTube are the most addictive.
+
+Educational purpose users show minimal stress impact.
+
+Promoting balanced digital routines improves focus and well-being.
+
+
+🎨 Dashboard Color Theme:
+Element	      Color 	         HEX
+
+Primary	   Deep Blue	       #3B82F6
+
+Accent	    Bright Cyan      #22D3EE
+
+Alert 	    Coral Red	       #F87171
+
+Success	   Emerald Green 	  #10B981
+
+Background	 Soft Gray 	     #F5F7FA
+
+
+🧾 Key Insights Summary:
+
+ Students spending >5 hrs/day are less productive academically.
+
+ Sleep decreases with increased screen time.
+
+ Stress levels are higher for heavy social media users.
+
+ Instagram & YouTube are top addictive platforms.
+
+ Balance between study and social media improves performance.
+
+🪄 How to Use This Project
+
+Clone the repository:
+
+git clone https://github.com/yourusername/student-social-media-addiction.git
+
+
+Open student_social_media_data.xlsx in Power BI.
+
+Load and clean data if necessary.
+
+Open student_social_media_dashboard.pbix in Power BI Desktop.
+
+Explore dashboard pages and interact with filters/slicers.
+
+
+🧑‍💻 Author:
+
+👤 Created by: Alwin Raj
+
+📧 Email: alwinraj952@gmail.com
+
+💼 Freelancer in: | UI/UX Design | Data Analytics
+
+
+⭐ Support:
+
+If you found this project useful:
+
+⭐ Star this repository
+
+🪄 Fork it and add your own analysis
+
+💬 Share feedback or improvement ideas
+
+
+---
+
+###  Next Steps:
+1. Create this folder in your local project:  
+   `student-social-media-addiction/powerbi/screenshots/`
+2. Save your four uploaded `.png` images inside it.
+3. Copy this README.md to your main project folder.
+4. Push it to GitHub — and your repository will look **professional and recruiter-ready** 🎯
+
+---
+
+Would you like me to also generate your **SQL query file (`student_social_media_queries.sql`)** that matches this project’s dataset (with ~10 queries from basic to insights)?  
+I can make it ready to upload along with this README.
