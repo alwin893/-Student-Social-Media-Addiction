@@ -3,10 +3,25 @@
 
 # 🎓 Student Social Media Addiction Analysis (SQL + Power BI)
 
-## 📊 Overview
-This project explores how **social media usage impacts students’ academic performance, sleep patterns, and stress levels** using **SQL for data analysis** and **Power BI for visualization**.
+📘 Project Overview
 
-The goal is to identify patterns in social media behavior among students and understand its correlation with lifestyle and academics.
+The Student Social Media Addiction Analysis project explores how social media usage impacts students’ academic performance, sleep habits, and mental well-being.
+It integrates SQL for data management and querying, and Power BI for data visualization and insight generation.
+
+The goal is to identify patterns of addiction, performance drops, and health issues among students, while presenting findings in an interactive dashboard.
+
+Key Features:
+
+📊 SQL Integration: Data storage, cleaning, and analytical queries.
+
+🎨 Power BI Dashboards: Visual storytelling through charts and KPIs.
+
+🧠 Data Insights: Correlation between screen time, academic scores, and stress levels.
+
+🛠️ Documentation: Includes ER diagrams, data dictionary, and project report.
+
+Tools Used:
+SQL · Power BI · Excel · GitHub
 
 ---
   📦 Student_Social_Media_Analysis:
