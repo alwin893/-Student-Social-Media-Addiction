@@ -15,17 +15,20 @@ The goal is to identify patterns in social media behavior among students and und
 Table: SSMA
 Columns:
 
-Column	                            Description
-Student_ID	                        Unique identifier for each student
-Age	Student’s                       age
-Gender	                            Gender of student
-Country	                            Country of student
-Avg_Daily_Usage_Hours	            Daily time spent on social media
-Most_Used_Platform	                Commonly used platform
-Affects_Academic_Performance	    Academic impact score
-Addicted_Score	                    Social media addiction level score
-Sleep_Hours_Per_Night	            Average sleep duration
-Mental_Health_Score              	Mental health rating
+| **Column Name**                  | **Description**                             |
+| -------------------------------- | ------------------------------------------- |
+| **Student_ID**                   | Unique identifier for each student          |
+| **Age**                          | Student’s age                               |
+| **Gender**                       | Gender of the student                       |
+| **Country**                      | Country of the student                      |
+| **Avg_Daily_Usage_Hours**        | Daily time spent on social media (in hours) |
+| **Most_Used_Platform**           | Commonly used social media platform         |
+| **Affects_Academic_Performance** | Academic impact score                       |
+| **Addicted_Score**               | Social media addiction level score          |
+| **Sleep_Hours_Per_Night**        | Average sleep duration per night (in hours) |
+| **Mental_Health_Score**          | Mental health rating or score               |
+
+---
 
 🧩 SQL Analysis Breakdown:
 🔹 Basic Analysis
@@ -39,6 +42,8 @@ Students using social media under age 20
 
 SELECT Student_ID, Age, Country FROM SSMA WHERE Age < 20;
 
+---
+
 🔹 Intermediate Analysis
 
 Average social media usage hours
@@ -49,6 +54,8 @@ SELECT ROUND(AVG(Avg_Daily_Usage_Hours),2) AS Avg_Usage FROM SSMA;
 Platform popularity
 
 SELECT Most_Used_Platform, COUNT(*) AS User_Count FROM SSMA GROUP BY Most_Used_Platform;
+
+---
 
 🔹 Advanced Insights
 
@@ -85,6 +92,8 @@ Navigation Buttons → Usage Overview, Addiction Impact, Smart Solutions
 
 Insight: “Most students spend 4–6 hours daily on social media, impacting sleep and academic focus.”
 
+---
+
 📈 Page 2 – Usage Overview
 
 Visuals
@@ -96,6 +105,8 @@ Bar Chart: Gender-wise distribution
 Horizontal Bar: Avg Daily Usage by Age Group
 
 Matrix Table: Platform vs Sleep Hours vs Addiction Score
+
+---
 
 💭 Page 3 – Addiction Impact
 
@@ -113,6 +124,8 @@ Insight:
 
 Students using social media more than 5 hours/day tend to have lower sleep (avg 3.8 hrs) and higher stress.
 
+---
+
 🧠 Page 4 – Insights & Solutions
 
 Findings
@@ -125,19 +138,18 @@ Educational purpose users show minimal stress impact.
 
 Promoting balanced digital routines improves focus and well-being.
 
+---
 
 🎨 Dashboard Color Theme:
-Element	      Color 	         HEX
+| **Element**    | **Color**     | **HEX Code** |
+| -------------- | ------------- | ------------ |
+| **Primary**    | Deep Blue     | #3B82F6      |
+| **Accent**     | Bright Cyan   | #22D3EE      |
+| **Alert**      | Coral Red     | #F87171      |
+| **Success**    | Emerald Green | #10B981      |
+| **Background** | Soft Gray     | #F5F7FA      |
 
-Primary	   Deep Blue	       #3B82F6
-
-Accent	    Bright Cyan        #22D3EE
-
-Alert 	    Coral Red	       #F87171
-
-Success	   Emerald Green 	   #10B981
-
-Background	 Soft Gray 	       #F5F7FA
+---
 
 
 🧾 Key Insights Summary:
@@ -151,6 +163,7 @@ Background	 Soft Gray 	       #F5F7FA
  Instagram & YouTube are top addictive platforms.
 
  Balance between study and social media improves performance.
+ 
 
 🪄 How to Use This Project
 
@@ -167,6 +180,7 @@ Open student_social_media_dashboard.pbix in Power BI Desktop.
 
 Explore dashboard pages and interact with filters/slicers.
 
+---
 
 🧑‍💻 Author:
 
@@ -176,6 +190,7 @@ Explore dashboard pages and interact with filters/slicers.
 
 💼 Freelancer in: | UI/UX Design | Data Analytics
 
+---
 
 ⭐ Support:
 
