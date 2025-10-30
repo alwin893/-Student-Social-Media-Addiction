@@ -44,7 +44,7 @@ SQL · Power BI · Excel · GitHub
 | │     ├── overview_page.png           | Overview dashboard.                                                    |
 | │     ├── performance_insights.png    | Academic performance & addiction insights.                             |
 | │     └── health_analysis.png         | Sleep and mental health analysis.                                      |
-| ├── **📂 Assets/**                    | Cont                                                                   |
+| ├── **📂 Assets/**                    | icons                                                                   |
 
 ---
 
