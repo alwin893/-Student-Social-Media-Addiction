@@ -164,6 +164,34 @@ Promoting balanced digital routines improves focus and well-being.
  Instagram & YouTube are top addictive platforms.
 
  Balance between study and social media improves performance.
+
+ ---
+ 
+ ER Diagram | Student Social Media Addiction:
+ 
+Entity Relationship Diagram (ERD) representing the database structure for the Student Social Media Addiction Analysis project.
+
+This diagram shows the relationships between key entities — students, usage, performance, and sleep_health.
+
+Table Details:
+
+students — Contains basic student details and acts as the primary entity.
+
+usage — Records average daily social media usage and preferred platforms.
+
+performance — Tracks students’ academic and addiction scores.
+
+sleep_health — Captures sleep hours and mental health scores.
+
+Relationships:
+
+One student → many usage records
+
+One student → many performance records
+
+One student → many sleep_health records
+
+This ERD serves as the foundation for both SQL queries and Power BI visualizations used in the project.
  
 --- 
 
