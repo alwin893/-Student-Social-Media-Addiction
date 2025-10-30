@@ -173,12 +173,14 @@ Entity Relationship Diagram (ERD) representing the database structure for the St
 
 This diagram shows the relationships between key entities — students, usage, performance, and sleep_health.
 
-📋 Table Details
-Table Name	Description	Columns	Primary / Foreign Keys	Relationship
-students	Contains core details of each student.	id (string)	PK: id	One-to-Many with all other tables
-usage	Tracks each student’s daily social media usage data.	id, avg_daily_usage_hours, most_used_platform, student_id	PK: id, FK: student_id → students.id	Many-to-One with students
-performance	Stores students’ addiction and academic performance metrics.	id, student_id, addicted_score, academic_score	PK: id, FK: student_id → students.id	Many-to-One with students
-sleep_health	Captures data on students’ sleep duration and mental health score.	id, student_id, sleep_hours, mental_health_score	PK: id, FK: student_id → students.id	Many-to-One with students
+📋 Table Details:
+
+| **Table Name**   | **Description**                                                   | **Key Fields**               | **Relationships**                                       |
+| ---------------- | ----------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------- |
+| **students**     | Stores basic student details. Acts as the **primary entity**.     | `id (PK)`                    | One-to-many with `usage`, `performance`, `sleep_health` |
+| **usage**        | Records average daily social media usage and preferred platforms. | `id (PK)`, `student_id (FK)` | Many-to-one with `students`                             |
+| **performance**  | Tracks each student’s **academic** and **addiction** scores.      | `id (PK)`, `student_id (FK)` | Many-to-one with `students`                             |
+| **sleep_health** | Captures sleep hours and mental health scores of students.        | `id (PK)`, `student_id (FK)` | Many-to-one with `students`                             |
 
 Relationships:
 
