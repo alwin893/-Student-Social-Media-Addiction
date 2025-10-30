@@ -11,29 +11,29 @@ The goal is to identify patterns in social media behavior among students and und
 ---
   📦 Student_Social_Media_Analysis:
   
-| **Folder / File**                                                                                   | **Description**                                                        |
-| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| **📦 Student_Social_Media_Analysis/**                                                               | Main project folder containing all files.                              |
-| ├── **📂 [Documentation](Documentation/)**                                                          | Contains all project documentation files.                              |
-| │ ├── [Project_Report.pdf](Documentation/Project_Report.pdf)                                        | Final project report summarizing objectives, methodology, and results. |
-| │ ├── [ER_Diagram.png](Documentation/ER_Diagram.png)                                                | Entity Relationship Diagram showing table relationships.               |
-| │ └── [Data_Dictionary.xlsx](Documentation/Data_Dictionary.xlsx)                                    | Describes tables, columns, and data types used in SQL.                 |
-| ├── **📂 [SQL_Files](SQL_Files/)**                                                                  | Contains SQL scripts for data creation and analysis.                   |
-| │ ├── [create_tables.sql](SQL_Files/create_tables.sql)                                              | Script to create all database tables.                                  |
-| │ ├── [insert_sample_data.sql](SQL_Files/insert_sample_data.sql)                                    | Script to insert sample student data.                                  |
-| │ └── [analysis_queries.sql](SQL_Files/analysis_queries.sql)                                        | SQL queries for performance and addiction insights.                    |
-| ├── **📂 [PowerBI_Dashboard](PowerBI_Dashboard/)**                                                  | Power BI dashboard and theme files.                                    |
-| │ ├── [Student_Social_Media.pbix](PowerBI_Dashboard/Student_Social_Media.pbix)                      | Power BI project file with dashboards.                                 |
-| │ ├── [Dashboard_Theme.md](PowerBI_Dashboard/Dashboard_Theme.md)                                    | Defines color palette and theme for visuals.                           |
-| │ └── **📂 [PowerBI_Screenshots](PowerBI_Dashboard/PowerBI_Screenshots/)**                          | Dashboard preview images.                                              |
-| │    ├── [overview_page.png](PowerBI_Dashboard/PowerBI_Screenshots/overview_page.png)               | Overview dashboard.                                                    |
-| │    ├── [performance_insights.png](PowerBI_Dashboard/PowerBI_Screenshots/performance_insights.png) | Academic performance & addiction insights.                             |
-| │    └── [health_analysis.png](PowerBI_Dashboard/PowerBI_Screenshots/health_analysis.png)           | Sleep and mental health analysis.                                      |
-| ├── **📂 [Assets](Assets/)**                                                                        | Contains images and branding materials.                                |
-| │ ├── [Logo.png](Assets/Logo.png)                                                                   | Project or organization logo.                                          |
-| │ └── [Preview_Banner.png](Assets/Preview_Banner.png)                                               | GitHub repository banner or cover image.                               |
-| ├── [README.md](README.md)                                                                          | Main documentation file for the project.                               |
-| └── [LICENSE](LICENSE)                                                                              | License information for open-source sharing.                           |
+| **Folder / File**                     | **Description**                                                |
+| ------------------------------------- | -------------------------------------------------------------- |
+| **📦 Student_Social_Media_Analysis/** | Main project folder containing all files.                      |
+| ├── **📂 Documentation/**             | Contains all project documents.                                |
+| │ ├── `Project_Report.pdf`            | Detailed project report with objectives, methods, and results. |
+| │ ├── `ER_Diagram.png`                | Entity Relationship Diagram of the database.                   |
+| │ └── `Data_Dictionary.xlsx`          | Describes all tables, fields, and data types.                  |
+| ├── **📂 SQL_Files/**                 | SQL scripts for data creation and analysis.                    |
+| │ ├── `create_tables.sql`             | SQL script to create database tables.                          |
+| │ ├── `insert_sample_data.sql`        | Sample data insertion queries.                                 |
+| │ └── `analysis_queries.sql`          | SQL analysis and insight queries.                              |
+| ├── **📂 PowerBI_Dashboard/**         | Power BI visualization files and resources.                    |
+| │ ├── `Student_Social_Media.pbix`     | Power BI dashboard file.                                       |
+| │ ├── `Dashboard_Theme.md`            | Power BI color and theme documentation.                        |
+| │ └── **📂 PowerBI_Screenshots/**     | Folder containing dashboard preview images.                    |
+| │    ├── `overview_page.png`          | Overview dashboard page.                                       |
+| │    ├── `performance_insights.png`   | Academic performance insights.                                 |
+| │    └── `health_analysis.png`        | Sleep and mental health visualization.                         |
+| ├── **📂 Assets/**                    | Contains images and visual assets.                             |
+| │ ├── `Logo.png`                      | Project or organization logo.                                  |
+| │ └── `Preview_Banner.png`            | GitHub banner or cover image.                                  |
+| ├── `README.md`                       | Project documentation and instructions.                        |
+| └── `LICENSE`                         | Project licensing information.                                 |
 
 ---
 
